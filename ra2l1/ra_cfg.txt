@@ -287,7 +287,6 @@ FSP Configuration
       VSSDCDC 26 SYSTEM0_VSS_DCDC - - - - - - - - IO "Read only" - 
     
   User Events
-    IIC0 RXI (Receive data full): iic_master_rxi_isr_test
     
   User Event Links
     

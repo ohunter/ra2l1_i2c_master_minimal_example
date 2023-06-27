@@ -9,7 +9,7 @@
         #define VECTOR_DATA_IRQ_COUNT    (4)
         #endif
         /* ISR prototypes */
-        void iic_master_rxi_isr_test(void);
+        void iic_master_rxi_isr(void);
         void iic_master_txi_isr(void);
         void iic_master_tei_isr(void);
         void iic_master_eri_isr(void);

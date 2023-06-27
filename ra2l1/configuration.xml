@@ -158,9 +158,7 @@
     </component>
   </raComponentSelection>
   <raElcConfiguration/>
-  <raIcuConfiguration>
-    <interrupt event="event.iic0.rxi" isr="iic_master_rxi_isr_test"/>
-  </raIcuConfiguration>
+  <raIcuConfiguration/>
   <raModuleConfiguration>
     <module id="module.driver.ioport_on_ioport.0">
       <property id="module.driver.ioport.name" value="g_ioport"/>
