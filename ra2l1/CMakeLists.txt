@@ -52,6 +52,8 @@ target_link_options(ra2l1_c
 
 set_target_properties(ra2l1_c PROPERTIES LINK_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/script/fsp.ld)
 
+# This is added as a separate library because GNU ld expects weak symbols to be overwritten in other libraries
+# Thus the default implementations of `R_BSP_WarmStart` will be replaced by the one provided in hal_entry.cpp
 add_library(ra2l1 STATIC
     src/hal_entry.cpp
 )
