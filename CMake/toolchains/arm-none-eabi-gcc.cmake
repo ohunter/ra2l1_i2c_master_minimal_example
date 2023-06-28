@@ -3,7 +3,7 @@ set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
 
 set(CPU_FLAGS "-mcpu=${CMAKE_SYSTEM_PROCESSOR} -mthumb")
 
-set(C_FLAGS "-Wall -Wpedantic -Wextra -Wsuggest-attribute=noreturn -ffreestanding -fno-builtin -nostdlib")
+set(C_FLAGS "-Wall -Wpedantic -Wextra -Wsuggest-attribute=noreturn -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -nostdlib")
 set(CXX_FLAGS "${C_FLAGS} -fno-exceptions -fno-rtti -fconcepts-diagnostics-depth=5")
 
 # Toolchain settings

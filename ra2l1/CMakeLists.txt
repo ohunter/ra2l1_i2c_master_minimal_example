@@ -48,6 +48,9 @@ target_link_options(ra2l1_c
     INTERFACE LINKER:--library-path=${CMAKE_CURRENT_SOURCE_DIR}
     INTERFACE LINKER:--script=${CMAKE_CURRENT_SOURCE_DIR}/script/fsp.ld
     INTERFACE LINKER:--print-memory-usage
+    # For some reason the linker removes the vector table addition
+    # This prevents that from happening
+    INTERFACE LINKER:--require-defined=g_vector_table
 )
 
 set_target_properties(ra2l1_c PROPERTIES LINK_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/script/fsp.ld)

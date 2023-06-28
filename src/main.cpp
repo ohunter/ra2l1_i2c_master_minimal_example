@@ -5,16 +5,6 @@
 
 extern const iic_master_extended_cfg_t g_i2c_master0_extend;
 
-extern "C"
-const bsp_interrupt_event_t g_interrupt_event_link_select[BSP_ICU_VECTOR_MAX_ENTRIES] = {
-    ICU_EVENT_IIC0_RXI,
-    ICU_EVENT_IIC0_TXI,
-    ICU_EVENT_IIC0_TEI,
-    ICU_EVENT_IIC0_ERI,
-    static_cast<bsp_interrupt_event_t>(0)
-};
-
-
 int main() {
     constexpr uint8_t tx_data[] = {0xff, 0xee, 0xdd, 0xcc, 0xbb, 0xaa, 0x99, 0x88, 0x77, 0x66, 0x55, 0x44, 0x33, 0x22, 0x11, 0x00};
 
