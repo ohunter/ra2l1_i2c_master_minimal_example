@@ -31,6 +31,7 @@ int _write(int fd, const void *buf, size_t cnt) {
     return 0;
 }
 
+[[gnu::weak]]
 void *_sbrk(const ptrdiff_t increment) {
     static char* heap{__HeapBase};
     char *prev_heap = heap;

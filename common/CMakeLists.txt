@@ -1,7 +1,7 @@
 project(common LANGUAGES CXX C ASM)
 
 add_library(common
-    STATIC
+    OBJECT
     syscalls.cpp
     print.cpp
 )

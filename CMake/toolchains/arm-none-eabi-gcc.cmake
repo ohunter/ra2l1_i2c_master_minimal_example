@@ -25,8 +25,8 @@ set(CMAKE_C_FLAGS "${CPU_FLAGS} ${SPEC_FLAGS} ${C_FLAGS}" CACHE INTERNAL "C Comp
 set(CMAKE_CXX_FLAGS "${CPU_FLAGS} ${SPEC_FLAGS} ${CXX_FLAGS}" CACHE INTERNAL "CXX Compiler Flags")
 set(CMAKE_ASM_FLAGS "${CPU_FLAGS} ${ASM_FLAGS} -x assembler-with-cpp" CACHE INTERNAL "ASM Compiler Flags")
 
-set(CMAKE_C_FLAGS_DEBUG "-g -ggdb3" CACHE INTERNAL "C Debug Compiler Flags")
-set(CMAKE_CXX_FLAGS_DEBUG "-g -ggdb3" CACHE INTERNAL "CXX Debug Compiler Flags")
+set(CMAKE_C_FLAGS_DEBUG "-Og -g -ggdb3" CACHE INTERNAL "C Debug Compiler Flags")
+set(CMAKE_CXX_FLAGS_DEBUG "-Og -g -ggdb3" CACHE INTERNAL "CXX Debug Compiler Flags")
 set(CMAKE_ASM_FLAGS_DEBUG "-g -ggdb3" CACHE INTERNAL "ASM Debug Compiler Flags")
 
 set(CMAKE_C_FLAGS_RELEASE "-O3 -Werror" CACHE INTERNAL "C Release Compiler Flags")
